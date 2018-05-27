@@ -1,0 +1,6 @@
+1. Number of cost units associated with 32 push operations on empty array with initial capacity of 8.
+8 units of cost (First 8 pushes) + X + 1 + 7 (X = 8 at this time, reallocation for 9th push plus the following 7 pushes and capacity doubles to 16) + X + 1 + 15 (X = 16 at this time, reallocation for 17th push plus following  15 pushes and capacity doubles to 32).  This is 32 total pushes which is simplified to,  8 + 8 + 1 + 7 + 16 + 1 + 15 = 56 total units of cost.
+
+The big O complexity for as N is large is O(n) because that is the worst case.
+
+2. 8+8+2+10+2+12+2+14+2+16+2+18+2+20+2+22+2+24+2+26+2+28+2+30+2= 260 units of time.  The big O complexity for this is O(n) because it is worst case.
